@@ -1,0 +1,7 @@
+INFO:Solscan:
+Contract_lack_to_call_modifier (tests/check-upgradeability/contract_initialization.sol#19-24) needs to be initialized by Contract_lack_to_call_modifier.initialize() (tests/check-upgradeability/contract_initialization.sol#21-23).
+Reference: https://github.com/khulnasoft-lab/solscan/wiki/Upgradeability-Checks#initialize-function
+INFO:Solscan:
+Contract_lack_to_call_modifier.initialize() (tests/check-upgradeability/contract_initialization.sol#21-23) does not call the initializer modifier.
+Reference: https://github.com/khulnasoft-lab/solscan/wiki/Upgradeability-Checks#initializer-is-not-called
+INFO:Solscan:2 findings, 12 detectors run

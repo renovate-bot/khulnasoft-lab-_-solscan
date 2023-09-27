@@ -42,7 +42,7 @@ pip3 install solscan-analyzer
 ### Using Git
 
 ```bash
-git clone https://github.com/crytic/solscan.git && cd solscan
+git clone https://github.com/khulnasoft-lab/solscan.git && cd solscan
 python3 setup.py install
 ```
 

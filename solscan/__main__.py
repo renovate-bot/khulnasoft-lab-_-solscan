@@ -281,7 +281,7 @@ def parse_args(
     usage += f"\t- NETWORK:0x.. // a contract on a different network. Supported networks: {','.join(x[:-1] for x in SUPPORTED_NETWORK)}\n"
 
     parser = argparse.ArgumentParser(
-        description="For usage information, see https://github.com/crytic/solscan/wiki/Usage",
+        description="For usage information, see https://github.com/khulnasoft-lab/solscan/wiki/Usage",
         usage=usage,
     )
 
@@ -299,7 +299,7 @@ def parse_args(
     group_detector = parser.add_argument_group("Detectors")
     group_printer = parser.add_argument_group("Printers")
     group_checklist = parser.add_argument_group(
-        "Checklist (consider using https://github.com/crytic/solscan-action)"
+        "Checklist (consider using https://github.com/khulnasoft-lab/solscan-action)"
     )
     group_misc = parser.add_argument_group("Additional options")
 
@@ -868,7 +868,7 @@ def main_impl(
         traceback.print_exc()
         logging.error(red("Error:"))
         logging.error(red(output_error))
-        logging.error("Please report an issue to https://github.com/crytic/solscan/issues")
+        logging.error("Please report an issue to https://github.com/khulnasoft-lab/solscan/issues")
 
     except Exception:  # pylint: disable=broad-except
         output_error = traceback.format_exc()
